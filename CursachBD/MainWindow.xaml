@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CursachBD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" WindowStyle="None" ResizeMode="NoResize"  
+    WindowStartupLocation="CenterScreen" WindowState="Maximized" >
+    <Grid Background="#FF3E3E3E">
+        <Button Content="Гостю" HorizontalAlignment="Stretch" Margin="200,200,200,0" Click="ShowDrugs"  VerticalAlignment="Top"  Height="53" Background="#FFFF963E" BorderBrush="#FFAC6E3B" Foreground="Black"/>
+        <Button Content="Менеджеру" HorizontalAlignment="Stretch" Margin="200,260,200,0"  Click="ShowDrugs" VerticalAlignment="Top" Height="53" Background="#FFFF963E" BorderBrush="#FFAC6E3B" Foreground="Black"/>
+        <Button Content="Продавцу" HorizontalAlignment="Stretch" Margin="200,320,200,0" Click="ShowDrugs"  VerticalAlignment="Top" Height="53" Background="#FFFF963E" BorderBrush="#FFAC6E3B" Foreground="Black"/>
+        <Button Content="Поставщику" HorizontalAlignment="Stretch" Margin="200,380,200,0" Click="ShowDrugs"  VerticalAlignment="Top" Height="53" Background="#FFFF963E" BorderBrush="#FFAC6E3B" Foreground="Black"/>
+
+        <Button Content="Выход" HorizontalAlignment="Right" Margin="0,0,10,10" Click="Exit"  VerticalAlignment="Bottom" Height="53" Background="#FF7A7A7A" BorderBrush="#FFAC6E3B" Foreground="Black" Width="85"/>
+
     </Grid>
 </Window>

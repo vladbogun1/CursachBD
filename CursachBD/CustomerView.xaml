@@ -1,0 +1,25 @@
+﻿<Window x:Class="CursachBD.CustomerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CursachBD"
+        mc:Ignorable="d"
+        Title="CustomerView" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Menu Height="25" VerticalAlignment="Top" >
+            <Button Click="RefreshMethod" Content="Обновить" Height="25" Width="64" BorderThickness="0" Background="#FFF1F1F1" ></Button>
+                
+            <Button Click="CloseIntent" Content="Выйти" Height="25" Width="64" BorderThickness="0" Background="#FFF1F1F1" ></Button>
+
+        </Menu>
+        <TabControl HorizontalAlignment="Stretch" Margin="0,25,0,0" VerticalAlignment="Stretch" >
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox Name="itemsGrid" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+                </Grid>
+            </TabItem>
+            
+        </TabControl>
+    </Grid>
+</Window>

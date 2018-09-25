@@ -24,5 +24,17 @@ namespace CursachBD
         {
             InitializeComponent();
         }
+
+       
+
+        private void ShowDrugs(object sender, RoutedEventArgs e)
+        {
+            CustomerView view = new CustomerView();
+            view.ShowDialog();
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
